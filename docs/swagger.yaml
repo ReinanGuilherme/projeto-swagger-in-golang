@@ -1,0 +1,43 @@
+basePath: /
+host: localhost:8080
+info:
+  contact:
+    name: Reinan Guilherme
+    url: https://www.linkedin.com/in/reinan-guilherme-34086b236
+  description: Este é um servidor de amostra.
+  title: Gin Swagger Example API
+  version: "1.0"
+paths:
+  /HelloFriend:
+    get:
+      consumes:
+      - application/json
+      description: do ping
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: ping example testando HelloFriend
+      tags:
+      - example
+  /HelloWorld:
+    get:
+      consumes:
+      - application/json
+      description: do ping
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: ping example testando Helloworld
+      tags:
+      - example
+schemes:
+- http
+swagger: "2.0"
